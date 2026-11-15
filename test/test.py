@@ -9,8 +9,7 @@ from cocotb.triggers import FallingEdge, RisingEdge, Timer
 async def reset(dut):
     dut.rst_n.value = 0
     dut.ui_in.value = 0
-    await RisingEdge(dut.clk)
-    await Timer(1, unit="ns")
+    await Timer(10, unit="ns")
     assert (int(dut.uo_out.value) >> 7) & 1 == 1
     assert int(dut.uio_out.value) & 0b11 == 0b00
     await FallingEdge(dut.clk)
@@ -23,7 +22,7 @@ async def apply_prices(dut, prices):
             await FallingEdge(dut.clk)
         dut.ui_in.value = price
         await RisingEdge(dut.clk)
-        await Timer(1, unit="ns")
+        await Timer(10, unit="ns")
 
         if index < 4:
             assert (int(dut.uo_out.value) >> 7) & 1 == 1
