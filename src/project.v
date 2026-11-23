@@ -2,7 +2,7 @@
  * Copyright (c) 2026 Alexis Valencia
  * SPDX-License-Identifier: Apache-2.0
  *
- * tt_um_alexisval08_nvda_slope -- price slope signal chip
+ * tt_um_alexisval08_price_slope -- price slope signal chip
  *
  * Reads one 8-bit price per clock tick, measures the SLOPE over the last
  * LOOKBACK ticks, and displays a BUY / HOLD / SELL letter on the board's
@@ -34,7 +34,7 @@
 `default_nettype none
 `timescale 1ns / 1ps
 
-module tt_um_alexisval08_nvda_slope #(
+module tt_um_alexisval08_price_slope #(
     // Both are fixed at build time, exactly as the project scope specifies:
     // changing them means re-running synthesis.
     parameter integer       LOOKBACK  = 4,       // ticks back to compare against
@@ -170,7 +170,7 @@ module tt_um_example (
     input  wire       rst_n
 );
 
-  tt_um_alexisval08_nvda_slope #(
+  tt_um_alexisval08_price_slope #(
     .LOOKBACK(4),
     .THRESHOLD(9'sd10)
   ) dut (

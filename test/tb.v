@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Instantiate the project top module:
-  tt_um_alexisval08_nvda_slope user_project (
+  tt_um_alexisval08_price_slope user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST

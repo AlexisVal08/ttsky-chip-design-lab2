@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# NVDA Slope Signal
+# Price Slope Signal
 
 This Tiny Tapeout project compares 8-bit price samples over a four-clock-tick
 window and reports a **BUY**, **HOLD**, or **SELL** signal. It is a digital
