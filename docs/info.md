@@ -48,3 +48,15 @@ The design is intended for the ChipDiscover v1.2 board mapping: the eight
 switches provide the price, the MANCLK button clocks each sample, and the RST
 button resets the history. The 7-segment output displays the signal and the
 decimal point indicates history warm-up.
+
+## Interactive demo
+### Try it in your browser
+
+An interactive Wokwi simulation runs this exact Verilog:
+https://wokwi.com/projects/481535388184374273
+
+1. Press the green Play button, then press **RST**.
+2. With all switches off, press **MANCLK** 5 times. The decimal point goes out.
+3. Turn switch 6 on (price 32) and press MANCLK: the display shows **b** (BUY).
+4. Turn switch 6 off (price 0) and press MANCLK 4 times: the display shows **S** (SELL) on the fourth press.
+5. Small moves (for example, switch 1 only) stay on **H** (HOLD).
