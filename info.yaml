@@ -1,5 +1,6 @@
 # Tiny Tapeout project information
 project:
+  Wokwi_id:     "481535388184374273"
   title:        "Price Slope Signal"      # Project title
   author:       "Alexis Valencia"      # Your name
   discord:      "alexis_valencia01_"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
