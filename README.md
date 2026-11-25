@@ -2,6 +2,9 @@
 
 # Price Slope Signal
 
+**Live simulation:** [Try the chip in Wokwi](https://wokwi.com/projects/481535388184374273),
+running the exact Verilog in `src/project.v`.
+
 This Tiny Tapeout design turns a stream of unsigned 8-bit values into a
 **BUY**, **HOLD**, or **SELL** trend signal. The values can represent prices,
 but the chip does not fetch live market data or place trades; it only processes
