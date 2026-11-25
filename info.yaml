@@ -2,7 +2,7 @@
 project:
   title:        "Price Slope Signal"      # Project title
   author:       "Alexis Valencia"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "www.linkedin.com/in/alexis-valencia-m1111"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Compares 8-bit price samples over four clock ticks and outputs a BUY, HOLD, or SELL signal."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
